@@ -1,0 +1,171 @@
+#leftnav{
+    float: left;
+    width: 33%;
+    min-height: 100%;
+    height:auto;
+ 
+}
+#list{
+    padding: 40px;
+    width: 60%;
+
+
+}
+#listitem{
+    height: 120px;
+}
+
+.bigcircleblu{
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 45px; 
+    opacity: 30%;
+    background-color: #007dff;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.smallcircleblu{
+    z-index:10;
+    margin-left: 15px;
+    margin-top:-75px;
+    align:center;
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 30px; 
+    background-color: #007dff;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.bigcirclegray{
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 45px; 
+    opacity: 30%;
+    background-color: #b0b0b0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.smallcirclegray{
+    z-index:10;
+    margin-left: 15px;
+    margin-top:-75px;
+    align:center;
+    display: block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 30px; 
+    background-color: #b0b0b0;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+.labelblu{
+    float:right;
+    margin-top:-45px;
+    font-size: x-large;
+    color: #007DFF;
+}
+.labelgray{
+    float:right;
+    margin-top:-45px;
+    font-size: x-large;
+    color: #b0b0b0;
+}
+
+
+
+#rightnav{
+    float:right;
+    width:66%;
+    min-height: 100%;
+    height:auto;
+   
+    background-color: #001E3C;
+
+}
+#button{
+    width: 25%;
+    height: 100px;
+    line-height: 100px;
+    color:white;
+    display: inline-block;
+    text-align:center;
+    justify-content: center;
+    font-size: x-large;
+
+    box-sizing: border-box;
+    overflow: hidden;
+    color:white;
+    background-color: #007DFF;
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%);
+
+}
+
+#image{
+    position:relative;
+    width:540px;
+    height:700px;
+}
+#pdf{
+    position:absolute;
+    z-index:1;
+}
+#canvas{
+    position:relative;
+    z-index:20;
+}
+
+#predictions{
+    float:left;
+    width:45%;
+    color:white;
+    font-size: large;
+}
+
+
+#additional{
+    float: right;
+    width:45%;
+    color:white;
+    font-size: large;
+}
+
+#submit{
+    width: 25%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #007DFF;
+    color:white;
+    font-size: x-large;
+}
+
+#results{
+    width: 50%;
+    color: white;
+    background-color: #007DFF;
+    text-align:center;
+    justify-content: center;
+    font-size: x-large;
+    position: absolute;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    
+
+}

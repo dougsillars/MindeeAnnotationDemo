@@ -1,0 +1,44 @@
+head
+  
+   link(rel='stylesheet', href='style.css')
+  
+   link(rel='icon', href='icon.ico', type='image/x-icon')
+body
+  header.header 
+   
+  div(id='leftnav')
+    img(src="https://platform.mindee.com/static/media/logo.7474f533.svg")
+    div(id="navigationtext")
+
+      h1 Continuous Learning Tutorial
+
+      h2 Programatically train your document parsing API
+      div(id="list")
+        div(id="listitem") 
+          .bigcircleblu
+          .smallcircleblu 1 
+          .labelblu Upload a document
+        |
+        |
+        div(id="listitem") 
+          .bigcirclegray 
+          .smallcirclegray 2 
+          .labelgray  Annotate Your Data
+        |
+        |
+        div(id="listitem") 
+          .bigcirclegray 
+          .smallcirclegray 3 
+          .labelgray Send Annotations
+  div(id='rightnav')
+    form(id='form' action="/" method = "POST" enctype="multipart/form-data").form  
+      label(for="selectfile" id= 'button') Add a W-9 form
+        input(id="selectfile" type='file', name='imageSource' style="display:none;" ).input   
+        
+      input(type="text" name = 'xerrorrange' value ='0.1' style="display:none;").input
+     
+      input(type="text" name = 'yerrorrange' value = '0.025' style="display:none;").input
+
+      input(type='submit', value='Submit' style="display:none;")
+
+script(src='client.js')

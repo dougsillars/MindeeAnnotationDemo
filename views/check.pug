@@ -1,0 +1,67 @@
+head
+  
+   link(rel='stylesheet', href='style.css')
+  
+   link(rel='icon', href='icon.ico', type='image/x-icon')
+body
+  header.header 
+   
+  div(id='leftnav')
+    img(src="https://platform.mindee.com/static/media/logo.7474f533.svg")
+    div(id="navigationtext")
+      h1 Continuous Learning Tutorial
+
+      h2  Programatically train your document parsing API
+      div(id="list")
+        div(id="listitem") 
+          .bigcircleblu
+          .smallcircleblu 1 
+          .labelblu Upload a document
+        |
+        |
+        div(id="listitem") 
+          .bigcircleblu
+          .smallcircleblu 2 
+          .labelblu  Annotate Your Data
+        |
+        |
+        div(id="listitem") 
+          .bigcirclegray 
+          .smallcirclegray 3 
+          .labelgray Send Annotations
+      
+  div(id='rightnav')
+    div(id="image")
+        embed(id="pdf" src= imageForPage+"#toolbar=0&navpanes=0&scrollbar=0&view=FitH" width ="100%" height="100%")
+        canvas(id="canvas" width="540px" height="700px")
+
+    form(id='form' action="/annotate" method = "POST").form
+        input(type="text" id="documentId" name="documentId" value= documentId style="display:none")
+        div(id="allpredictions")
+            p Ensure all the correct terms are checked.
+            p You can remove values from the prediction(left column)
+            p , or add values found in the circles (right column).
+            div(id="predictions")
+                p Here are the predictions
+                each values, key in prediction
+                    each content in values.values
+                        p #{key}: 
+                            input(type='checkbox' id=key name=key value=content.candidate_key  checked)
+                            label(for=key) #{content.content}
+
+            div(id="additional")
+                p these are additional options
+                each values, key in alternativePredictions
+                    each content in values.values
+                        p #{key}: 
+                            input(type='checkbox' id=key name=key value=content.key )
+                            label(for=key) #{content.content}
+
+        input(id="submit" type='submit', value='Next Step' )   
+    
+script(type='text/javascript').
+    var elipses =!{JSON.stringify(elipses)};
+script(type='text/javascript', src='client1.js')
+            
+
+   
