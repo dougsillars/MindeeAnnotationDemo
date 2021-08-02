@@ -9,6 +9,7 @@ var FormData = require('form-data');
 const formidable = require('formidable')
 const express = require('express');
 const { response } = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 app.use(
 	express.urlencoded({
